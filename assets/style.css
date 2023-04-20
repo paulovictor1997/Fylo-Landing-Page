@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+body {
+  min-height: 100vh;
+}
+
+.description {
+  color: hsl(243, 87%, 12%);
+  font-weight: 500;
+  margin-top: 3vh;
+}
+
+.title {
+  font-family: "Raleway";
+  color: hsl(243, 87%, 12%);
+  font-weight: 900;
+}
+
+header {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .menu {
+  padding: 10px;
+  display: flex;
+  list-style: none;
+}
+header .menu li a {
+  text-decoration: none;
+  margin-left: 10px;
+  font-family: "Raleway";
+  color: hsl(243, 87%, 12%);
+}
+header .menu li a:hover {
+  text-decoration: underline;
+}
+
+.area1 {
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.area1 .content1 {
+  width: 550px;
+  margin-top: 8vh;
+}
+.area1 .content1 h1 {
+  font-size: 2.1rem;
+}
+.area1 .content1 .login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3vh;
+}
+.area1 .content1 .login .error1 {
+  color: hsl(0, 81%, 54%);
+  font-style: italic;
+  font-size: 10px;
+  padding: 5px;
+  display: none;
+}
+.area1 .content1 .login .form-1 {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+}
+.area1 .content1 .login .form-1 input {
+  padding: 10px;
+  width: 250px;
+}
+.area1 .content1 .login .form-1 .button {
+  width: 150px;
+  padding: 10px;
+  background-color: hsl(224, 93%, 58%);
+  color: hsl(240, 75%, 98%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.area1 .content1 .login .form-1 .button:hover {
+  transition: 1s all;
+  background-color: hsl(0, 0%, 75%);
+}
+
+.area2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  margin-top: 10vh;
+}
+.area2 .content2 {
+  max-width: 600px;
+}
+.area2 .content2 .link {
+  margin-top: 3vh;
+}
+.area2 .content2 .link a {
+  color: hsl(170, 45%, 43%);
+}
+.area2 aside {
+  width: 400px;
+  margin-top: 5vh;
+  padding: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: hsl(240, 75%, 98%);
+}
+.area2 aside .description2 {
+  color: hsl(243, 87%, 12%);
+}
+.area2 aside .testimomial {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 3vh;
+  color: hsl(243, 87%, 12%);
+}
+.area2 .img2 {
+  background-image: url("../images/bg-curve-desktop.svg");
+  background-position: center;
+}
+
+.area3 {
+  width: 100%;
+  padding: 25px;
+  background-color: hsl(238, 22%, 44%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5vh;
+}
+.area3 .content3 {
+  width: 500px;
+  padding: 10px;
+}
+.area3 .content3 .title2 {
+  color: hsl(240, 75%, 98%);
+  font-weight: 500;
+}
+.area3 .content3 .description3 {
+  color: hsl(240, 75%, 98%);
+  font-weight: 500;
+  margin-top: 3vh;
+}
+.area3 .form-2 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.area3 .form-2 input {
+  border: none;
+  width: 350px;
+  padding: 5px;
+  margin-bottom: 2vh;
+}
+.area3 .form-2 .error2 {
+  font-style: italic;
+  font-size: 10px;
+  color: hsl(240, 75%, 98%);
+  display: none;
+}
+.area3 .form-2 .button2 {
+  width: 200px;
+  padding: 10px;
+  background-color: hsl(224, 93%, 58%);
+  color: hsl(240, 75%, 98%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.area3 .form-2 .button2:hover {
+  transition: 1s all;
+  background-color: hsl(0, 0%, 75%);
+}
+
+footer {
+  width: 100%;
+  background-color: hsl(243, 87%, 12%);
+  color: hsl(240, 75%, 98%);
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .contactArea {
+  display: flex;
+  flex-direction: column;
+}
+footer .contactArea .contact {
+  padding: 10px;
+}
+footer .links {
+  padding: 10px;
+}
+footer .links ul {
+  list-style: none;
+}
+footer .links ul li {
+  padding: 5px;
+}
+footer .links ul li a {
+  color: hsl(240, 75%, 98%);
+  text-decoration: none;
+}
+footer .links ul li a:hover {
+  text-decoration: underline;
+}
+footer .socialMedia {
+  padding: 10px;
+}
+footer .socialMedia .linkMedia {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+footer .socialMedia .linkMedia li a {
+  color: hsl(240, 75%, 98%);
+}
+footer .socialMedia .linkMedia li a:hover {
+  color: hsl(170, 45%, 43%);
+}/*# sourceMappingURL=style.css.map */

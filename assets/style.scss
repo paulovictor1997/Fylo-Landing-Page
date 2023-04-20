@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+//Primary
+$fontColor1:hsl(243, 87%, 12%);
+$fontColor2:hsl(240, 75%, 98%);
+$areaColor3:hsl(238, 22%, 44%);
+$fontColor3:hsl(0, 0%, 75%);
+$hover:hsl(0, 0%, 75%);
+$span1:hsl(0, 81%, 54%);
+
+//Alternatives
+$LinkColor: hsl(170, 45%, 43%);
+$Button:hsl(224, 93%, 58%);
+$footer:hsl(243, 87%, 12%);
+$aside:hsl(240, 75%, 98%);
+
+//Font - Header menu, title.
+$font2:"Raleway";
+
+body{
+    min-height: 100vh;
+}
+
+.description{
+    color: $fontColor1;
+    font-weight: 500;
+    margin-top: 3vh;
+}
+
+.title{
+    font-family: $font2;
+    color: $fontColor1;
+    font-weight: 900;
+}
+
+header{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .menu{
+        padding: 10px;
+        display: flex;
+        list-style: none;
+
+        li a{
+            text-decoration: none;
+            margin-left: 10px;
+            font-family: $font2;
+            color: $fontColor1;
+
+            &:hover{text-decoration: underline;}
+        }
+    }
+}
+
+.area1{
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+
+    .content1{
+        width: 550px;
+        margin-top: 8vh;
+
+        h1{
+            font-size: 2.1rem;
+        }
+
+        .login{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 3vh;
+            
+            .error1{
+                color: $span1;
+                font-style: italic;
+                font-size: 10px;
+                padding: 5px;
+                display: none;
+            }
+
+            .form-1{
+                display: flex;
+                gap: 10px;
+                padding: 5px;
+
+                input{
+                    padding: 10px;
+                    width: 250px;
+                }
+
+                .button{
+                    width: 150px;
+                    padding: 10px;
+                    background-color: $Button;
+                    color: $fontColor2;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+    
+                    &:hover{
+                        transition: 1s all;
+                        background-color: $hover
+                    }
+                }
+            }
+        }
+    }
+}
+
+.area2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    margin-top: 10vh;
+
+    .content2{
+        max-width: 600px;
+
+        .link{
+            margin-top: 3vh;
+            a{
+                color: $LinkColor;
+            }
+        }
+    }
+
+    aside{
+        width: 400px;
+        margin-top: 5vh;
+        padding: 10px;
+        box-shadow: 5px 5px 5px 5px  rgba(0, 0, 0, 0.1);
+        background-color:$aside;
+        .description2{
+            color: $fontColor1;
+        }
+
+        .testimomial{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 3vh;
+            color: $fontColor1;
+        }
+    }
+
+
+    .img2{
+        background-image: url('../images/bg-curve-desktop.svg');
+        background-position: center;
+    }
+}
+
+.area3{
+    width: 100%;
+    padding: 25px;
+    background-color: $areaColor3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5vh;
+
+    .content3{
+        width: 500px;
+        padding: 10px;
+
+        .title2{
+            color: $fontColor2;
+            font-weight: 500;
+        }
+
+        .description3{
+            color: $fontColor2;
+            font-weight: 500;
+            margin-top: 3vh;
+        }
+    }
+
+    .form-2{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        input{
+            border: none;
+            width: 350px;
+            padding: 5px;
+            margin-bottom: 2vh;
+        }
+
+        .error2{
+            font-style: italic;
+            font-size: 10px;
+            color: $fontColor2;
+            display: none;
+        }
+
+        .button2{
+            width: 200px;
+            padding: 10px;
+            background-color: $Button;
+            color: $fontColor2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover{
+                transition: 1s all;
+                background-color: $hover
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    background-color:$footer;
+    color: $fontColor2;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+
+    .contactArea{
+        display: flex;
+        flex-direction: column;
+
+        .contact{
+            padding: 10px;
+        }
+    }
+
+    .links{
+        padding: 10px;
+        ul{
+            list-style: none;
+            li{
+                padding: 5px;
+                a{
+                    color: $fontColor2;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .socialMedia{
+        padding: 10px;
+        .linkMedia{
+            display: flex;
+            gap: 10px;
+            list-style: none;
+
+            li{
+                a{
+                    color: $fontColor2;
+                    &:hover{
+                       color: $LinkColor;
+                    }
+                }
+            }
+        }
+    }
+}
