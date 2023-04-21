@@ -9,7 +9,7 @@
    - Javascript (validate email)
 
  ### Links
-  - Soon 
+  - Front End mentor profile : [https://www.frontendmentor.io/profile/paulovictor1997](https://www.frontendmentor.io/profile/paulovictor1997)
 
 ## Preview 
    ![images/preview.jpg](images/preview.jpg) 
