@@ -12,4 +12,4 @@
   - Soon 
 
 ## Preview 
-   ![images/preview.jpg](images/preview.jpg)
+   ![images/preview.jpg](images/preview.jpg) 
